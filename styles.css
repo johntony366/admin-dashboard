@@ -1,7 +1,7 @@
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     font-family: sans-serif;
 }
 
@@ -82,12 +82,21 @@ body {
     text-align: center;
 }
 
-.header-links li {
-    background-color: #0284c7;
+.header-links button {
+    background-color: #20a2e3;
+    border: none;
     padding: 0.5rem;
     border-radius: 1.5rem;
     color: white;
     font-weight: bold;
+}
+
+.header-links button:hover {
+    background-color: #0284c7;
+}
+
+.header-links button:active {
+    background-color: #00689c;
 }
 
 /* Sidebar */
