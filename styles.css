@@ -1,5 +1,6 @@
 body {
     display: grid;
+    margin: 0;
     grid-template-columns: 1fr 4fr;
 }
 
@@ -9,11 +10,23 @@ header {
 
     display: grid;
     box-shadow: 0px 3px 5px 0px #000000;
+    grid-template-rows: repeat(2, 1fr);
 }
 
 header > .upper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    
+}
+
+.upper img {
+    height: 2rem;
+    width: 2rem;
+}
+
+header input[type="search"] {
+    height: 1rem;
+    margin-top: 8px;
 }
 
 header > .lower {
@@ -26,6 +39,7 @@ aside {
     grid-column: 1;
 
     background-color: #67e8f9;
+    padding: 8px;
 }
 
 main {

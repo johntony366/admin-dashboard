@@ -5,37 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 
 <body>
-    <header>
-        <div class="upper">
-            <input type="search">
-            <span>Morgan Oakley</span>
+    <header class="header">
+        <div class="search-container">
+            <label for="search"><img src="images/magnify.svg" alt="search icon"></label>
+            <input type="search" id="search" name="search">
         </div>
-        <div class="lower">
-            <div class="profile">
-                <span class="welcome">Hi there,</span>
-                <span class="details">Morgan Oakley (@morgan)</span>
-            </div>
-            <nav>
-                <ul>
-                    <li>New</li>
-                    <li>Upload</li>
-                    <li>Share</li>
-                </ul>
-            </nav>
+
+        <div class="profile-container">
+            <img src="images/bell-ring-outline.svg" alt="bell icon">
+            <img src="images/Mojave Night.jpg" alt="sand dune at night">
+            <span class="profile-name">Morgan Oakley</span>
         </div>
+
+        <div class="welcome-container">
+            <img src="images/Mojave Night.jpg" alt="sand dune at night">
+            <p>Hi there,</p>
+            <p>Morgan Oakley (@morgan)</p>
+        </div>
+
+        <nav class="header-links">
+            <ul>
+                <li>New</li>
+                <li>Upload</li>
+                <li>Share</li>
+            </ul>
+        </nav>
     </header>
+
     <aside>
-        <div class="descriptor">
-            Dashboard
+        <div class="logo">
+            <img src="images/view-dashboard.svg" alt="4 grey boxes arranges in an irregular grid">
+            <h2>Dashboard</h2>
         </div>
 
         <nav>
-            <ul class="primary">
+            <ul class="primary-links">
                 <li>Home</li>
                 <li>Profile</li>
                 <li>Messages</li>
@@ -43,14 +55,16 @@
                 <li>Tasks</li>
                 <li>Communities</li>
             </ul>
-            <ul class="secondary">
+
+            <ul class="secondary-links">
                 <li>Settings</li>
                 <li>Support</li>
                 <li>Privacy</li>
             </ul>
         </nav>
     </aside>
-    <main>
+
+    <main class="content">
         <div class="project-section">
             <h3>Your Projects</h3>
             <div class="projects">
@@ -59,6 +73,9 @@
                     <p>Sed tempus ut lacus ut scelerisque.
                         Suspendisse sollicitudin nibh erat, id
                         facilisis felis accumsan nec.</p>
+                    <div class="project-options">
+                        <img src="" alt="">
+                    </div>
                 </div>
 
                 <div class="project">
@@ -113,39 +130,44 @@
                         in accumsan elit maximus ac. Donec
                         hendrerit sodales congue...</p>
                 </div>
-            </div>
 
-            <div class="announcement">
-                <h5>Community Share Day</h5>
-                <p>Nam vel lectus tincidunl. rutrum nulla
-                    eu, ornare libero. Aliquam dictum
-                    accumsan porttitor...</p>
-            </div>
+                <div class="announcement">
+                    <h5>Community Share Day</h5>
+                    <p>Nam vel lectus tincidunl. rutrum nulla
+                        eu, ornare libero. Aliquam dictum
+                        accumsan porttitor...</p>
+                </div>
 
-            <div class="announcement"></div>
-            <h5>Update Privacy Policy</h5>
-            <p>Phosellus eificitur nisi eget elit
-                consectetur, eget condimentum ante
-                auclor. Cras fringilla sagittis sem in
-                mattis...</p>
+                <div class="announcement">
+                    <h5>Update Privacy Policy</h5>
+                    <p>Phosellus eificitur nisi eget elit
+                        consectetur, eget condimentum ante
+                        auclor. Cras fringilla sagittis sem in
+                        mattis...</p>
+                </div>
+            </div>
         </div>
 
         <div class="trending-section">
             <div class="trending">
-                <p class="user-tag">@tegan</p>
-                <p class="about">World Peace Builder</p>
+                <img src="images/charan_pfp.jpg" alt="picture of charan">
+                <p class="user-tag">@charan._.m</p>
+                <p class="about">Fittest guy on the planet (fr tho)</p>
             </div>
             <div class="trending">
-                <p class="user-tag">@morgan</p>
-                <p class="about">Super Cool Project</p>
+                <img src="images/john_pfp.jpg" alt="picture of john">
+                <p class="user-tag">@john.tony366</p>
+                <p class="about">Second fittest guy on the planet</p>
             </div>
             <div class="trending">
-                <p class="user-tag">@kendall</p>
-                <p class="about">Life Changing App</p>
+                <img src="images/pratik_pfp.jpg" alt="picture of pratik">
+                <p class="user-tag">@prat._.prat._.prat</p>
+                <p class="about">Small af</p>
             </div>
             <div class="trending">
-                <p class="user-tag">@alex</p>
-                <p class="about">No Traffic Maker</p>
+                <img src="images/satvik_pfp.jpg" alt="picture of satvik">
+                <p class="user-tag">@_satviksachan</p>
+                <p class="about">Smoke weed everyday</p>
             </div>
         </div>
 
