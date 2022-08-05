@@ -9,26 +9,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Admin Dashboard</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header class="header">
         <div class="search-container">
-            <label for="search"><img src="images/magnify.svg" alt="search icon"></label>
-            <input type="search" id="search" name="search">
+            <label for="searchBox"><img src="images/magnify.svg" alt="search icon"></label>
+            <input type="search" id="searchBox" name="searchBox">
         </div>
 
         <div class="profile-container">
-            <img src="images/bell-ring-outline.svg" alt="bell icon">
-            <img src="images/Mojave Night.jpg" alt="sand dune at night">
-            <span class="profile-name">Morgan Oakley</span>
+            <img src="images/bell-ring.svg" alt="bell icon" class="notifs">
+            <img src="images/Mojave Night.jpg" alt="sand dune at night" class="pfp">
+            <h3 class="profile-name">Morgan Oakley</h3>
         </div>
 
         <div class="welcome-container">
-            <img src="images/Mojave Night.jpg" alt="sand dune at night">
-            <p>Hi there,</p>
-            <p>Morgan Oakley (@morgan)</p>
+            <img src="images/Mojave Night.jpg" alt="sand dune at night" class="pfp">
+            <div class="message">
+                <span>Hi there,</span>
+                <br>
+                <span>Morgan Oakley (@morgan)</span>
+            </div>
         </div>
 
         <nav class="header-links">
@@ -40,26 +43,26 @@
         </nav>
     </header>
 
-    <aside>
+    <aside class="sidebar">
         <div class="logo">
-            <img src="images/view-dashboard.svg" alt="4 grey boxes arranges in an irregular grid">
+            <img src="images/lightning-bolt.png" alt="3 figures with the middle one enlarged">
             <h2>Dashboard</h2>
         </div>
 
-        <nav>
+        <nav class="links">
             <ul class="primary-links">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+                <li class="home"><a href="#">Home</a></li>
+                <li class="profile"><a href="#">Profile</a></li>
+                <li class="messages"><a href="#">Messages</a></li>
+                <li class="history"><a href="#">History</a></li>
+                <li class="tasks"><a href="#">Tasks</a></li>
+                <li class="communities"><a href="#">Communities</a></li>
             </ul>
 
             <ul class="secondary-links">
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li class="settings"><a href="#">Settings</a></li>
+                <li class="support"><a href="#">Support</a></li>
+                <li class="privacy"><a href="#">Privacy</a></li>
             </ul>
         </nav>
     </aside>
